@@ -1,0 +1,44 @@
+.themeSelector {
+  background: var(--secondary-background);
+  border: calc(var(--pixel-size) * 0.5) solid var(--secondary-background);
+  border-radius: calc(var(--pixel-size) * 0.75);
+  margin: 1rem 0;
+  display: flex;
+  color: var(--tile-background);
+  font-size: calc(var(--pixel-size) * 1.5);
+  line-height: calc(var(--pixel-size) * 3);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--pixel-size) * 0.5);
+  cursor: pointer;
+}
+
+.themeSelector select {
+  padding: calc(var(--pixel-size) * 0.5);
+  border-radius: calc(var(--pixel-size) * 0.75);
+  border: 1px solid var(--border-color);
+  background: var(--background-color);
+  color: var(--secondary-text-color);
+  font-size: calc(var(--pixel-size) * 2.5);
+  line-height: calc(var(--pixel-size) * 3);
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (min-width: 512px) {
+  .themeSelector {
+    border: calc(var(--pixel-size) * 1) solid var(--secondary-background);
+    font-size: calc(var(--pixel-size) * 2);
+    line-height: calc(var(--pixel-size) * 3.5);
+  }
+
+  .themeSelector select {
+    font-size: calc(var(--pixel-size) * 3.5);
+    line-height: calc(var(--pixel-size) * 3.5);
+    padding: calc(var(--pixel-size) * 0.75);
+  }
+} 

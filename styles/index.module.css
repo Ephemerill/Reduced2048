@@ -1,0 +1,114 @@
+.twenty48 {
+  margin: calc(var(--pixel-size) * 0) auto;
+  padding: calc(var(--pixel-size) * 1);
+  width: 100%;
+  max-width: calc(var(--pixel-size) * 37);
+  background-color: #f3f0fa;
+  min-height: 100vh; /* Ensure it covers full viewport height */
+}
+
+@media (min-width: 512px) {
+  .twenty48 {
+    max-width: calc(var(--pixel-size) * 60);
+  }
+}
+
+.twenty48 > header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(var(--pixel-size) * 3);
+  margin: calc(var(--pixel-size) * 3) 0 calc(var(--pixel-size) * 2) 0;
+}
+
+.twenty48 > header h1 {
+  margin: 0;
+  font-size: calc(var(--pixel-size) * 8);
+  line-height: 1;
+  text-align: center;
+}
+
+.twenty48 > footer {
+  margin: calc(var(--pixel-size) * 3) calc(var(--pixel-size) * 0);
+  font-weight: 600;
+  text-align: center;
+}
+
+.twenty48 > footer > .socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: calc(var(--pixel-size) * 2);
+}
+
+.twenty48 > footer > .socials > a > img {
+  vertical-align: middle;
+  margin: calc(var(--pixel-size) * 0.5);
+}
+
+@media (min-width: 512px) {
+  .twenty48 > footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+  }
+
+  .twenty48 > footer > div {
+    width: 100%;
+  }
+
+  .twenty48 > footer > .socials {
+    justify-content: right;
+    margin-bottom: calc(var(--pixel-size) * 0);
+  }
+
+  .twenty48 > footer > .socials > a > img:last-child {
+    margin: calc(var(--pixel-size) * 1);
+    margin-right: calc(var(--pixel-size) * 0);
+  }
+}
+
+.controls {
+  display: flex;
+  gap: calc(var(--pixel-size) * 1);
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+}
+
+.controls > * {
+  flex: 1;
+  min-width: calc(var(--pixel-size) * 8);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.themeWrapper {
+  margin-top: calc(var(--pixel-size) * 2);
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 511px) {
+  .twenty48 > header h1 {
+    font-size: calc(var(--pixel-size) * 5);
+  }
+  
+  .controls {
+    flex-direction: column;
+    gap: calc(var(--pixel-size) * 0.5);
+    width: 100%;
+  }
+
+  .controls > * {
+    width: 100%;
+  }
+}
+
+.twenty48 main h2 {
+  text-align: center;
+  margin-top: calc(var(--pixel-size) * 2);
+  color: var(--primary-text-color);
+}
